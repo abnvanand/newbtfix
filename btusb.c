@@ -190,6 +190,7 @@ static const struct usb_device_id blacklist_table[] = {
 
 	/* Broadcom BCM2045 devices */
 	{ USB_DEVICE(0x0a5c, 0x2045), .driver_info = BTUSB_BCM2045 },
+	{ USB_DEVICE(0x0a5c, 0x217f), .driver_info = BTUSB_BCM2045 },
 
 	/* Atheros 3011 with sflash firmware */
 	{ USB_DEVICE(0x0489, 0xe027), .driver_info = BTUSB_IGNORE },

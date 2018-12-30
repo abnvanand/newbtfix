@@ -3100,6 +3100,7 @@ static int btusb_probe(struct usb_interface *intf,
 	
 	if (id->driver_info & BTUSB_MEDIATEK) { 
 		set_bit(HCI_QUIRK_BROKEN_LOCAL_COMMANDS, &hdev->quirks);
+	}
 
 	if (id->driver_info & BTUSB_BCM92035)
 		hdev->setup = btusb_setup_bcm92035;

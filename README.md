@@ -18,3 +18,19 @@ sudo dkms add ./newbtfix-4.15
 sudo dkms install btusb/4.0
 
 Reboot
+
+
+
+# For mediatek 
+```bash
+git clone https://github.com/abnvanand/newbtfix-4.15.git
+sudo dkms add ./newbtfix-4.15
+sudo dkms install btusb/4.0
+reboot
+sudo modprobe mt76xx
+
+
+sudo systemctl enable bluetooth
+sudo systemctl start bluetooth
+
+```

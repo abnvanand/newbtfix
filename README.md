@@ -34,3 +34,7 @@ sudo systemctl enable bluetooth
 sudo systemctl start bluetooth
 
 ```
+
+```
+sudo dkms remove btusb/4.0 -k $(uname -r)
+```
